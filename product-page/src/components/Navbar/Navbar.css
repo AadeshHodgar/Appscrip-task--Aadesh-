@@ -1,0 +1,164 @@
+/* Top Header */
+.top-header {
+  background-color: black;
+  color: rgb(199, 15, 15);
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 20px;
+  font-size: 12px;
+}
+
+/* Center the LOGO above the navbar */
+.center-logo {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.center-logo h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin-bottom: 0;
+}
+
+.nav-links li {
+  cursor: pointer;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 5px;
+  overflow: hidden;
+}
+
+/* Underline animation */
+.nav-links li::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transition: width 0.3s ease;
+}
+
+.nav-links li:hover::after {
+  width: 100%;
+}
+
+/* Navbar icons positioned to the right */
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: transparent;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Discover Section */
+.discover {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.discover h2 {
+  font-weight: 900;
+  font-size: 50px;
+}
+
+/* Items Section */
+.items-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: 14px;
+  border-top: 1px solid #ddd;
+}
+
+.hide-filter {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-right: 10px;
+}
+
+.hide-filter a {
+  text-decoration: none;
+  font-weight: 500;
+  color: gray;
+}
+
+.hide-filter:hover a {
+  text-decoration: underline;
+}
+
+.recommended {
+  text-decoration: none;
+  font-weight: 500;
+  color: gray;
+  position: relative; 
+}
+.recommended a{
+ color: black;
+}
+
+.recommended:hover {
+  text-decoration: underline;
+}
+
+.recommended a {
+  display: flex; 
+  align-items: center; 
+}
+
+/* Dropdown options */
+.dropdown-options {
+  border: 1px solid #ccc; 
+  background-color: #fff; 
+  position: absolute; 
+  width: 100%; 
+  z-index: 1; 
+}
+
+.dropdown-options ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; 
+}
+
+.dropdown-options li {
+  padding: 10px;
+  cursor: pointer; 
+}
+
+.dropdown-options li:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown-arrow {
+  margin-left: 5px;
+}

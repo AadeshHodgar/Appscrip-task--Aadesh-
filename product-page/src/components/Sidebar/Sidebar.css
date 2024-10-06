@@ -1,0 +1,100 @@
+.sidebar {
+    width: 300px;
+    height: calc(100% - 100px - 50px);
+    overflow-y: auto;
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-sizing: border-box;
+    border-right: 1px solid #ddd;
+}
+
+.sidebar h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.sidebar-section {
+    margin-bottom: 20px;
+}
+
+.sidebar-section label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.sidebar-section input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.scrollbar {
+    overflow-y: scroll;
+    /* width: 25%; */
+}
+
+.dropdown-list {
+    max-height: 150px;
+    overflow-y: auto;
+    padding-left: 20px;
+    border: 1px solid #ddd;
+    background-color: white;
+    margin-top: 5px;
+    border-radius: 4px;
+}
+
+.expandable {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.scrollbar::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+.sidebar {
+    width: 250px;
+}
+
+.sidebar-section {
+    margin-bottom: 20px;
+}
+
+.expandable {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 0;
+}
+
+hr {
+    margin: 5px 0;
+}
+
+.arrow {
+    margin-left: auto;
+    font-size: 1.2em;
+}
+
+.expandable:hover {
+    background-color: #f0f0f0;
+}
